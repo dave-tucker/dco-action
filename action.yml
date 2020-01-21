@@ -1,0 +1,16 @@
+name: DCO Check
+description: Check that commits have been signed
+branding:
+  icon: award
+  color: blue
+inputs:
+  dcoLink:
+    description: Link to Sign Off Instructions
+    required: true
+    default: https://github.com/linuxkit/linuxkit/blob/master/CONTRIBUTING.md#sign-your-work
+  token:
+    description: GitHub API token
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
